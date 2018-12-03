@@ -1,5 +1,6 @@
 
 .ball{
+   float:left;
    background-color: #0799d3;
     width: 100px;
     height: 100px;
@@ -10,7 +11,35 @@
 
 }
 
+.ball2{
+   float:left;
+   background-color: #0799d3;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 0;
+    position: relative;
+    animation: jump2 .5s alternate infinite ease-in-out;
+
+}
+
 @keyframes jump {
+    0% {
+          top: 0px;
+         }
+    
+    50% {
+          top: 75px;
+
+    }
+    100% {
+          top: 150px;
+
+    }
+    
+}
+
+@keyframes jump2 {
     from {
           top: 0px;
          }
@@ -19,14 +48,8 @@
           top: 100px;
 
     }
+   
+    
 }
 
 
-@-webkit-keyframes jump {
-    from {
-      top: 0;
-    }
-    to {
-      top: 100px;
-    }
-  }
